@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+  
+
+    img{
+        width: 362.5px;
+        height: 240px;
+        /* margin-right: 10px;
+        margin-bottom: 10px; */
+       
+    }
+
+    div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 750.5px;
+        height: 480px;
+        gap: 10px;
+    }
+
+    
+    @media screen and (max-width: 450px) {
+        div{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 5px;
+        width: 362.5px;
+        height: 240px;
+
+        }
+        img{
+            width: 181.25px;
+            height: 120px;
+        }
+        #im1{
+            grid-column:1/2;
+            grid-row: 1/2;
+        } 
+        #im2{
+            grid-column:1/2;
+            grid-row: 2/3;
+        } 
+        #im3{
+            grid-column:1/2;
+            grid-row: 3/4;
+        } 
+        #im4{
+            grid-column:1/2;
+            grid-row: 4/5;
+        } 
+}
+
+   
+
+
+</style>
+
+<body>
+    <h1>My Photos</h1>
+    <div>
+        <img id="im1"src="https://cdn.pixabay.com/photo/2019/08/19/07/45/corgi-4415649__480.jpg">
+        <img id="im2"src="https://cdn.pixabay.com/photo/2015/11/17/13/13/bulldog-1047518__480.jpg">
+        <img id="im3"src="https://cdn.pixabay.com/photo/2016/07/07/15/35/puppy-1502565__480.jpg">
+        <img id="im4"src="https://cdn.pixabay.com/photo/2019/07/23/13/51/shepherd-dog-4357790__480.jpg">
+    </div>
+</body>
+</html>
